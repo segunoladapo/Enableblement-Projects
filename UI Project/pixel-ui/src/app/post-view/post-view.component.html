@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="col-9  mx-auto">
+    <b> {{post.user}}</b>
+    <div class="card shadow-sm mb-4">
+      <img class="card-img-top" src="../../../assets/download.svg" alt="Card image cap">
+      <div class="card-body">
+        <ul class="list-inline">
+          <li class="list-inline-item"><i class="fa fa-picture-o" aria-hidden="true"></i> Pixel : {{post.likeCount}}
+          </li>
+          <li class="list-inline-item"><i class="fa fa-commenting-o" aria-hidden="true"></i> Comments
+            : {{post.commentCount}}</li>
+        </ul>
+        <p><b>{{post.user}}</b> {{post.description}}</p>
+
+        <a routerLink="" (click)="viewComments()"  *ngIf="post.commentCount > 0">View Comments</a>
+
+      </div>
+    </div>
+  </div>
+</div>

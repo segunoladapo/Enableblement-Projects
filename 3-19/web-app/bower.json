@@ -1,0 +1,19 @@
+{
+  "name": "bower-web-app",
+  "description": "bower web app",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/resources/static/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bootstrap-css": "^3.3.7"
+  }
+}
